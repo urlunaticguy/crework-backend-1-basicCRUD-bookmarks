@@ -109,7 +109,7 @@ function Home() {
       </div>
       <div
         ref={refInput}
-        className=" flex lg:flex-row lg:gap-x-[2rem] flex-wrap w-[70rem] justify-center items-center"
+        className=" flex lg:flex-row lg:gap-[2rem] flex-wrap w-[70rem] justify-center items-center"
       >
         {second.map((data, index) => (
           <div
@@ -120,17 +120,17 @@ function Home() {
               <a
                 href={data[1]}
                 target="_blank"
-                className={` lg:text-[1.35rem] lg:w-[100%] cursor-pointer + ${colors[index][0]} + ${colors[index][1]}`}
+                className={` lg:text-[1.35rem] font-semibold lg:w-[100%] cursor-pointer + ${colors[index][0]} + ${colors[index][1]}`}
               >
                 {data[0]}
               </a>
               <input
                 defaultValue={data[0]}
-                className=" hidden w-[17rem] rounded-md flex text-center mb-[0.5rem]"
+                className=" hidden w-[17rem] rounded-md flex text-center mb-[0.5rem] px-[0.5rem]"
               ></input>
               <input
                 defaultValue={data[1]}
-                className=" hidden w-[17rem] rounded-md flex text-center"
+                className=" hidden w-[17rem] rounded-md flex text-center px-[0.5rem]"
               ></input>
             </div>
             <div className=" flex justify-center items-center">
